@@ -1,0 +1,26 @@
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.link {
+  color: #222222;
+}
+
+.link:hover {
+  color: #c4302e;
+}
+
+.active {
+  color: #c4302e;
+}
+
+.active:hover {
+  color: #c4302e;
+}
