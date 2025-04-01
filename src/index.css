@@ -3,11 +3,45 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
 @import "tailwindcss/utilities.css" layer(utilities);
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-title: "PT Serif", serif;
+  --font-body: "Roboto", sans-serif;
+}
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-body);
   color: #222222;
   font-size: 14px;
-  text-align: justify;
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.text-hover:hover {
+  color: #ffffff;
+}
+
+:root {
+  --font-title: "PT Serif", serif;
+  --font-body: "Roboto", sans-serif;
+}
+
+html {
+  font-family: var(--font-body);
+  color: #222222;
+  font-size: 14px;
+}
+
+.font-title {
+  font-family: var(--font-title);
+}
+
+.text-color {
+  color: #222222;
+}
+
+.hover-color:hover {
+  color: #c4302e;
 }
