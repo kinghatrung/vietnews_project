@@ -1,47 +1,28 @@
 @import "tailwindcss";
-@layer theme, base, components, utilities;
-@import "tailwindcss/theme.css" layer(theme);
-@import "tailwindcss/preflight.css" layer(base);
-@import "tailwindcss/utilities.css" layer(utilities);
 
-:root {
-  --font-title: "PT Serif", serif;
-  --font-body: "Roboto", sans-serif;
+@theme {
+  --font-title: "Merriweather", serif !important;
+  --font-body: "Arial", sans-serif;
+  --color-primary: #222222;
+  --color-hover: #c4302e;
 }
 
-html {
-  font-family: var(--font-body);
-  color: #222222;
-  font-size: 14px;
-}
+@layer base {
+  html {
+    font-family: var(--font-body);
+    color: var(--color-primary);
+    font-size: 14px;
+  }
 
-.font-title {
-  font-family: var(--font-title);
-}
+  .font-title {
+    font-family: var(--font-title);
+  }
 
-.text-hover:hover {
-  color: #ffffff;
-}
+  .text-color {
+    color: var(--color-primary);
+  }
 
-:root {
-  --font-title: "PT Serif", serif;
-  --font-body: "Roboto", sans-serif;
-}
-
-html {
-  font-family: var(--font-body);
-  color: #222222;
-  font-size: 14px;
-}
-
-.font-title {
-  font-family: var(--font-title);
-}
-
-.text-color {
-  color: #222222;
-}
-
-.hover-color:hover {
-  color: #c4302e;
+  .hover-color:hover {
+    color: var(--color-hover);
+  }
 }
