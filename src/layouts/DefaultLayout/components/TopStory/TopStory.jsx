@@ -5,7 +5,7 @@ import config from "~/config";
 
 function TopStory() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-24 gap-[10px]">
+    <section className="grid grid-cols-1 lg:grid-cols-24 gap-[10px] mb-[20px]">
       <div className="col-span-17 border-b border-[#E5E5E5] pb-[20px]">
         <article className="border-b border-[#E5E5E5] pb-[20px] mb-[20px]">
           <div className="sm:flex gap-[20px]">
@@ -24,7 +24,7 @@ function TopStory() {
               <h3 className="text-[24px] font-title font-bold">
                 <Link
                   to={config.routes.home}
-                  className="hover-color text-color text-[24px] font-title font-medium"
+                  className="hover-color text-color text-[24px] font-title font-bold"
                 >
                   Vua Bỉ thăm Hoàng thành Thăng Long
                 </Link>
@@ -46,7 +46,7 @@ function TopStory() {
 
         <div className="flex flex-col sm:flex-row gap-[20px]">
           <div className="flex flex-col justify-between">
-            <h3 className="text-[18px] sm:text-[16px] font-title font-medium mb-2">
+            <h3 className="text-[18px] sm:text-[16px] font-title font-bold mb-2">
               <Link to={config.routes.home} className="hover-color text-color">
                 Cả nước dự kiến còn 5.000 xã phường Cả nước dự kiến còn 5.000 xã
                 phường
@@ -63,7 +63,7 @@ function TopStory() {
               <div className="sm:w-[250px] sm:h-[150px] aspect-[5/3]">
                 <img
                   src="/src/assets/image/test.webp"
-                  className="w-full h-full object-cover"
+                  className="size-full object-cover"
                   alt="Image description"
                 />
               </div>
@@ -71,7 +71,7 @@ function TopStory() {
           </div>
 
           <div className="flex flex-col justify-between">
-            <h3 className="text-[18px] sm:text-[16px] font-title font-medium mb-2">
+            <h3 className="text-[18px] sm:text-[16px] font-title font-bold mb-2">
               <Link to={config.routes.home} className="hover-color text-color">
                 Cả nước dự kiến còn 5.000 xã phường
               </Link>
@@ -87,7 +87,7 @@ function TopStory() {
               <div className="sm:w-[250px] sm:h-[150px] aspect-[5/3]">
                 <img
                   src="/src/assets/image/nothing.jpg"
-                  className="w-full h-full object-cover"
+                  className="size-full object-cover"
                   alt="Image description"
                 />
               </div>
