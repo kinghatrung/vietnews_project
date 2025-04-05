@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { Flex } from "antd";
 
 import config from "~/config/";
-import "./Category.css";
 
 function Category() {
   return (
@@ -16,7 +15,9 @@ function Category() {
           <NavLink
             to={config.routes.home}
             // Cách dùng active ClassName của Router
-            className={({ isActive }) => (isActive ? "active" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-color hover-color active-color" : "text-color"
+            }
           >
             <li className="item-link">Chính trị</li>
           </NavLink>
@@ -24,7 +25,9 @@ function Category() {
           <NavLink
             to="/home"
             // Cách dùng active ClassName của Router
-            className={({ isActive }) => (isActive ? "active" : "link")}
+            className={({ isActive }) =>
+              isActive ? "active-color" : "text-color"
+            }
           >
             <li className="item-link">Chính trị</li>
           </NavLink>

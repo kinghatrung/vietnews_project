@@ -4,7 +4,6 @@ import { Divider, Flex, Row } from "antd";
 import { SearchOutlined, UserOutlined } from "@ant-design/icons";
 
 import config from "~/config/";
-import "./Navbar.css";
 
 function Navbar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -41,7 +40,11 @@ function Navbar() {
         <Flex align="center" className="right">
           <NavLink
             to={config.routes.home}
-            className={({ isActive }) => (isActive ? "active" : "news")}
+            className={({ isActive }) =>
+              isActive
+                ? "active-color hover-color active-color"
+                : "text-color text-color"
+            }
           >
             Mới nhất
           </NavLink>
