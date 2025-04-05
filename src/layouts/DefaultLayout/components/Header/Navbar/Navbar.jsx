@@ -18,12 +18,8 @@ function Navbar() {
 
   return (
     <div className="border-b border-[#E5E5E5] text-[#757575]">
-      <Row
-        className="max-w-[1130px] px-4 mx-auto h-[50px]"
-        align="center"
-        justify="space-between"
-      >
-        <Flex align="center" className="left">
+      <div className="max-w-[1130px] px-4 mx-auto h-[50px] flex justify-between items-center">
+        <div className="flex items-center">
           <Link to={config.routes.home}>
             <img style={{ height: 40 }} src="./src/assets/image/NEWS.png" />
           </Link>
@@ -36,14 +32,12 @@ function Navbar() {
               year: "numeric",
             })}
           </p>
-        </Flex>
-        <Flex align="center" className="right">
+        </div>
+        <div className="flex items-center">
           <NavLink
             to={config.routes.home}
             className={({ isActive }) =>
-              isActive
-                ? "active-color hover-color active-color"
-                : "text-color text-color"
+              isActive ? "hover-color active-color" : "hover-color"
             }
           >
             Mới nhất
@@ -54,8 +48,8 @@ function Navbar() {
           <p>
             <UserOutlined /> Đăng nhập
           </p>
-        </Flex>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 }
