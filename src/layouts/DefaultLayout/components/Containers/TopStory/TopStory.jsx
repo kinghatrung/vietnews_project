@@ -9,17 +9,14 @@ function TopStory() {
       <div className="col-span-17 border-b border-[#E5E5E5] pb-[20px]">
         <article className="border-b border-[#E5E5E5] pb-[20px] mb-[20px]">
           <div className="sm:flex gap-[20px]">
-            <div className="">
-              <Link
-                to={config.routes.home}
-                className="xl:w-[520px] xl:h-[312px] lg:w-[440px] lg:h-[264px] md:w-[440px] md:h-[264px] aspect-[5/3] block"
-              >
+            <Link to={config.routes.home}>
+              <div className="xl:w-[520px] xl:h-[312px] lg:w-[440px] lg:h-[264px] md:w-[440px] md:h-[264px] aspect-[5/3]">
                 <img
                   className="size-full object-cover"
                   src="./src/assets/image/nothing.jpg"
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
             <div className="pt-[16px] sm:pt-0">
               <h3 className="text-[24px] font-title font-bold">
                 <Link

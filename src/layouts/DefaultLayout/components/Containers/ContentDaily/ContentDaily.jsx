@@ -8,7 +8,7 @@ import CategoryList from "~/components/CategoryList";
 
 function ContentDaily() {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-24">
+    <section className="grid grid-cols-1 lg:grid-cols-24 border-b border-[#E5E5E5] pb-[20px] mb-[20px]">
       <div className="lg:col-span-9 col-span-full pr-0 lg:pr-[20px] border-r-0 lg:border-r border-[#E5E5E5]">
         <article className="border-b border-[#E5E5E5] pb-[20px] mb-[20px]">
           <h3 className="text-[18px] sm:text-[15px] font-title font-bold mb-2 ms:mb-0">
