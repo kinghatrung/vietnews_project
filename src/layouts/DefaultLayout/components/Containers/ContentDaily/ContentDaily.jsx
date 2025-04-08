@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import config from "~/config";
 import ListTitle from "~/components/ListTitle";
@@ -7,6 +7,8 @@ import NewsNoImage from "~/components/NewsNoImage";
 import CategoryList from "~/components/CategoryList";
 
 function ContentDaily() {
+  const genre = true;
+
   return (
     <section className="grid grid-cols-1 lg:grid-cols-24 border-b border-[#E5E5E5] pb-[20px] mb-[20px]">
       <div className="lg:col-span-9 col-span-full pr-0 lg:pr-[20px] border-r-0 lg:border-r border-[#E5E5E5]">
@@ -39,7 +41,7 @@ function ContentDaily() {
       <div className="lg:col-span-15 col-span-full pl-0 lg:pl-[20px]">
         <h1>Quảng cáo</h1>
         <div className="mt-[20px] pt-[20px] border-t border-t-[#bdbdbd] border-[#E5E5E5]">
-          <CategoryList />
+          <CategoryList genre={genre} />
           <div className="flex flex-col lg:flex-row gap-0 md:gap-[20px] border-b border-[#E5E5E5] pb-[20px]">
             <FullNews />
             <NewsNoImage />

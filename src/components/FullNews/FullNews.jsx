@@ -2,12 +2,24 @@ import { Link } from "react-router-dom";
 
 import config from "~/config";
 
-function FullNews() {
+function FullNews({ vertical }) {
   return (
     <>
-      <article className="flex flex-2 flex-col lg:flex-row gap-[15px] border-b lg:border-r lg:border-b-0 border-[#E5E5E5] pb-[20px] lg:pr-[20px] lg:pb-0">
+      <article
+        className={
+          vertical
+            ? "flex flex-col gap-[15px] pb-[15px] mb-[15px] border-b border-[#E5E5E5]"
+            : "flex flex-2 flex-col lg:flex-row gap-[15px] border-b lg:border-r lg:border-b-0 border-[#E5E5E5] pb-[20px] lg:pr-[20px] lg:pb-0"
+        }
+      >
         <Link to={config.routes.home}>
-          <div className="lg:w-[225px] lg:h-[135px] aspect-[5/3] block">
+          <div
+            className={
+              vertical
+                ? "aspect-[5/3]"
+                : "lg:w-[225px] lg:h-[135px] aspect-[5/3]"
+            }
+          >
             <img
               className="size-full object-cover"
               src="./src/assets/image/nothing.jpg"
