@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import config from "~/config";
 
-function CategoryList({ genre }) {
+function CategoryList({ genre = false }) {
   return (
     <div className="flex mb-[12px] items-end gap-[16px]">
       <h3 className="font-title font-bold ms:mb-0">

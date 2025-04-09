@@ -45,6 +45,7 @@ function Navbar() {
           <Divider style={{ height: 26 }} type="vertical" />
           <SearchOutlined className="cursor-pointer text-[15px]" />
           <Divider style={{ height: 26 }} type="vertical" />
+
           <p>
             <UserOutlined /> Đăng nhập
           </p>

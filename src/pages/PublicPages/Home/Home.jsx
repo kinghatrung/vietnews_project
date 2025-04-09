@@ -5,12 +5,12 @@ import ContentVertical from "~/layouts/DefaultLayout/components/Containers/Conte
 
 function Home() {
   return (
-    <div>
+    <>
       <TopStory />
       <ContentDaily />
       <ContentVertical />
       <MostViewed />
-    </div>
+    </>
   );
 }
 

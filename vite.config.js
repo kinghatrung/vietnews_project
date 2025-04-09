@@ -12,4 +12,9 @@ export default defineConfig({
     },
   },
   base: "./",
+  server: {
+    hmr: {
+      overlay: true,
+    },
+  },
 });

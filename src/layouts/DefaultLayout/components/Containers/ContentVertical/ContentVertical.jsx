@@ -1,16 +1,13 @@
 import CategoryList from "~/components/CategoryList";
-import FullNews from "~/components/FullNews";
-import NewsNoImage from "~/components/NewsNoImage";
+import News from "~/components/News";
 
 function ContentVertical() {
-  const vertical = true;
-
   return (
     <section className="grid grid-cols-1 lg:grid-cols-3 gap-[20px] pb-[20px] mb-[20px] border-b border-[#E5E5E5]">
-      <div className="">
+      <div>
         <CategoryList />
-        <FullNews vertical={vertical} />
-        <NewsNoImage />
+        <News vertical title noTime sizeDefault />
+        <News vertical title noImage noTime sizeDefault />
       </div>
     </section>
   );

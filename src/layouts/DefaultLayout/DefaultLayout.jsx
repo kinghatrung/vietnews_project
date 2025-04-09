@@ -11,7 +11,7 @@ function DefaultLayout({ children }) {
       <Category />
       <div className="max-w-[1130px] px-4 mx-auto py-[20px]">{children}</div>
       <Footer />
-      <FloatButton.BackTop />
+      <FloatButton.BackTop shape="square" />
     </div>
   );
 }
