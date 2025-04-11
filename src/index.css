@@ -29,6 +29,10 @@
     font-family: var(--font-title);
   }
 
+  .font-body {
+    font-family: var(--font-body);
+  }
+
   .text-color {
     color: var(--color-primary);
   }
@@ -40,4 +44,20 @@
   .active-color {
     color: var(--color-hover);
   }
+}
+
+.ant-typography,
+.ant-btn,
+.ant-input,
+.ant-form,
+.ant-modal,
+.ant-table,
+.ant-menu,
+.ant-tabs,
+.ant-dropdown,
+.ant-select,
+.ant-pagination,
+.ant-checkbox-wrapper,
+.ant-radio-wrapper {
+  font-family: "Arial", sans-serif !important;
 }
